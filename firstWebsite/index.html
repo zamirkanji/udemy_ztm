@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Fantasy Basketball Blog</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="content">
+
+      <div id="registration">
+        <header>
+          <h2>Welcome to our Fantasy Blog!</h2>
+          <p>Please Register Below</p>
+        </header>
+
+        <form method="POST" id="form">
+          First Name: <input type="text" name="firstname" required>
+          <br>
+          Last Name: <input type="text" name="lastname" required>
+          <br>
+          Email: <input type="email" name="email" required>
+          <br>
+          Password <input type="password" min="6" name="password" required>
+          <br>
+          <input type="submit" value="Register">
+          <input type="reset">
+        </form>
+
+        <br>
+        <hr>
+
+        <div id="nextpage">
+          <!-- <a href="nextpage.html">Proceed</a> -->
+          <input id="gotoblog" type="submit" onclick="location.href='nextpage.html';" value="Proceed">
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </div>
+</body>
+
+</html>
