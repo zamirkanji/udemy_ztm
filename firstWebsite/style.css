@@ -1,15 +1,15 @@
 body {
   /* opacity: .6; */
-  background-image: url("https://miro.medium.com/max/1812/1*C02wNydKS3IFId-orsyN3A.jpeg");
+  /* background-image: url("https://miro.medium.com/max/1812/1*C02wNydKS3IFId-orsyN3A.jpeg"); */
 }
 
 .container {
   display: flex;
-  height: 300px;
+  height: 1000px; 
   /* flex-basis: auto; */
   justify-content: center;
   align-items: center;
-  /* align-content: center; */
+  align-content: center; 
   text-align: center;
   /* margin: 0; */
   /* padding: center; */
@@ -18,9 +18,58 @@ body {
 }
 
 .content {
-  width: 400px;
-  height: 100px;
+  /* width: 400px; */
+  /* height: 100px; */
+  /* padding-top: 350px; */
   position: relative;
+}
+
+.formBtn {
+  border: none;
+  color: white;
+  padding: 5px 32px;
+  text-decoration: none;
+  margin: 6px 2px;
+  cursor: pointer;
+}
+
+#register:hover {
+  border-color: #333;
+}
+
+#register {
+  background-color: #4CAF50;
+  border: 1px solid black;
+  color: white;
+  padding: 8px 30px;
+  text-decoration: none;
+  margin: 10px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#reset:hover {
+  border-color: #333;
+}
+
+#reset {
+  background-color: #4CAF50;
+  border: 1px solid black;
+  color: white;
+  padding: 8px 38px;
+  text-decoration: none;
+  margin: 10px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+#form {
+  justify-content: center;
+  align-content: center;
+  font-weight: lighter;
+  opacity: .8;
+  font
 }
 
 

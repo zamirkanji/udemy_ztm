@@ -13,6 +13,15 @@
   <div class="container">
     <div class="content">
 
+      <style id="bgImg">
+        body {
+          background-image: url('https://www.rookieroad.com/img/courses/basketball/basketball-rookie.png');
+          /* background-repeat: no-repeat; */
+          background-size: 1000px 1000px;
+        }
+      </style>
+
+
       <div id="registration">
         <header>
           <h2>Welcome to our Fantasy Blog!</h2>
@@ -20,16 +29,16 @@
         </header>
 
         <form method="POST" id="form">
-          First Name: <input type="text" name="firstname" required>
+          First Name: <input class="formBtn" type="text" name="firstname" required>
           <br>
-          Last Name: <input type="text" name="lastname" required>
+          Last Name: <input class="formBtn" type="text" name="lastname" required>
           <br>
-          Email: <input type="email" name="email" required>
+          Email: <input class="formBtn" type="email" name="email" required>
           <br>
-          Password <input type="password" min="6" name="password" required>
+          Password <input class="formBtn" type="password" min="6" name="password" required>
           <br>
-          <input type="submit" value="Register">
-          <input type="reset">
+          <input id="register" type="submit" value="Register">
+          <input id="reset" type="reset">
         </form>
 
         <br>
