@@ -5,6 +5,9 @@ body {
 
 .container {
   display: flex;
+  width: 100%;
+  clear: both;
+  /* width: 1000px; */
   /* height: 1000px;  */
   /* flex-basis: auto; */
   justify-content: center;
@@ -24,19 +27,33 @@ body {
   position: relative;
 }
 
-.formBtn {
-  border: 0;
+#header {
+  opacity: .8;
+  margin: 40px;
+}
+
+#header h1 {
+  color:white;
+  font-size: 200%;
+}
+#header p {
   color: white;
+}
+
+input[type=text], input[type=email], input[type=password] {
+  border: 0;
+  color: black;
   padding: 5px 32px;
-  text-decoration: none;
-  margin: 8px 10px;
-  cursor: pointer;
+  /* text-decoration: none; */
+  margin: 15px 10px;
+  /* cursor: pointer; */
   border-radius: 10px;
   opacity: .9;
 }
 
-
-
+#emailRow {
+  margin-left: 32px;
+}
 
 #register_reset_btns {
   opacity: .7;
@@ -104,7 +121,6 @@ body {
   align-content: center;
   font-weight: lighter;
   opacity: .8;
-  font
 }
 
 
@@ -112,20 +128,6 @@ body {
   color: green;
 } */
 
-
-#header {
-  opacity: .8;
-
-}
-
-
-#header h2 {
-  color:white;
-  font-size: 150%;
-}
-#header p {
-  color: white;
-}
 
 #footer {
   color: white;

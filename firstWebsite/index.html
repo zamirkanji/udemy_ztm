@@ -27,19 +27,19 @@
 
       <div id="header">
         <header>
-          <h2>Welcome to our Fantasy Blog!</h2>
+          <h1>Welcome to our Fantasy Blog!</h1>
           <p>Please Register Below</p>
         </header>
       </div>
-
+      <!-- <hr> -->
       <form method="POST" id="form">
-        First Name: <input class="formBtn" type="text" name="firstname" required>
+        First Name: <input type="text" name="firstname">
         <br>
-        Last Name: <input class="formBtn" type="text" name="lastname" required>
+        Last Name: <input type="text" name="lastname">
         <br>
-        Email: <input class="formBtn" type="email" name="email" required>
+        <span id="emailRow">Email: <input type="email" name="email" required></span>
         <br>
-        Password: <input class="formBtn" type="password" min="6" name="password" required>
+        Password: <input type="password" min="6" name="password" required>
         <br>
         <div id="register_reset_btns">
           <input id="register" type="submit" value="Register">
