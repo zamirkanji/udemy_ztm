@@ -15,10 +15,12 @@
 
       <style id="bgImg">
         body {
-          background-image: url('https://www.rookieroad.com/img/courses/basketball/basketball-rookie.png');
+          /* background-image: url('https://www.rookieroad.com/img/courses/basketball/basketball-rookie.png'); */
+          background-image: url('https://i.pinimg.com/originals/66/00/60/660060b1fed74cb1547dbe38219c889c.jpg');
+
           /* background-repeat: no-repeat; */
-          background-size: 1000px 1000px;
-          position: relative;
+          background-size: auto;
+          /* position: relative; */
         }
       </style>
 
@@ -37,7 +39,7 @@
         <br>
         Email: <input class="formBtn" type="email" name="email" required>
         <br>
-        Password <input class="formBtn" type="password" min="6" name="password" required>
+        Password: <input class="formBtn" type="password" min="6" name="password" required>
         <br>
         <div id="register_reset_btns">
           <input id="register" type="submit" value="Register">
@@ -49,10 +51,18 @@
       <br>
       <hr>
 
+      <div id="footer">
+        <footer>
+          <p>A login is not required, you may proceed to our website. If you would like to sign up for our weekly
+            newsletters, we would appreciate it. Otherwise, let us know if you have any questions or suggestions.</p>
+        </footer>
+      </div>
       <div id="nextpage">
         <!-- <a href="nextpage.html">Proceed</a> -->
         <input id="gotoblog" type="submit" onclick="location.href='nextpage.html';" value="Proceed">
       </div>
+
+
     </div>
     <script src="script.js"></script>
   </div>
