@@ -18,36 +18,40 @@
           background-image: url('https://www.rookieroad.com/img/courses/basketball/basketball-rookie.png');
           /* background-repeat: no-repeat; */
           background-size: 1000px 1000px;
+          position: relative;
         }
       </style>
 
 
-      <div id="registration">
+      <div id="header">
         <header>
           <h2>Welcome to our Fantasy Blog!</h2>
           <p>Please Register Below</p>
         </header>
+      </div>
 
-        <form method="POST" id="form">
-          First Name: <input class="formBtn" type="text" name="firstname" required>
-          <br>
-          Last Name: <input class="formBtn" type="text" name="lastname" required>
-          <br>
-          Email: <input class="formBtn" type="email" name="email" required>
-          <br>
-          Password <input class="formBtn" type="password" min="6" name="password" required>
-          <br>
+      <form method="POST" id="form">
+        First Name: <input class="formBtn" type="text" name="firstname" required>
+        <br>
+        Last Name: <input class="formBtn" type="text" name="lastname" required>
+        <br>
+        Email: <input class="formBtn" type="email" name="email" required>
+        <br>
+        Password <input class="formBtn" type="password" min="6" name="password" required>
+        <br>
+        <div id="register_reset_btns">
           <input id="register" type="submit" value="Register">
           <input id="reset" type="reset">
-        </form>
-
-        <br>
-        <hr>
-
-        <div id="nextpage">
-          <!-- <a href="nextpage.html">Proceed</a> -->
-          <input id="gotoblog" type="submit" onclick="location.href='nextpage.html';" value="Proceed">
         </div>
+
+      </form>
+
+      <br>
+      <hr>
+
+      <div id="nextpage">
+        <!-- <a href="nextpage.html">Proceed</a> -->
+        <input id="gotoblog" type="submit" onclick="location.href='nextpage.html';" value="Proceed">
       </div>
     </div>
     <script src="script.js"></script>
