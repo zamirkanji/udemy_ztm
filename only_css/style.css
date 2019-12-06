@@ -1,0 +1,52 @@
+/* Selector {
+  Property: value;
+} */
+
+* {
+  text-align: right;
+}
+
+body {
+  background-image: url("photo-1575556809963-3d9e5730eda0.jpeg");
+  background-size: cover;
+}
+
+h2, p {
+  color: #061f1a;
+  text-align: center;
+  border: 5px solid rgba(245, 109, 18, 0.3);
+  cursor: pointer;
+}
+
+/* p {
+  color: white;
+} */
+/* cascading (always takes the last input that it recieves for a specific selector */
+p {
+  margin: 100px;
+  color: #85D0C4;
+  font-weight: 200;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+}
+
+/* CLASS SELECTORS (AND ACTIVE CLASS SELECTORS) */
+.webtext:last-child:hover {
+  border: 5px dashed green;
+}
+
+.active {
+  color: red;
+} 
+
+#div1 {
+  background: rgb(219, 219, 224);
+  opacity: .7;
+}
+
+#div2 {
+  background: rgba(255, 0, 0, .2 );
+}
