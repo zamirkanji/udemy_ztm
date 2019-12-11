@@ -25,7 +25,23 @@ h2, p {
 p {
   margin: 100px;
   color: #85D0C4;
-  font-weight: 200;
+  font-weight: 100;
+  /* text-decoration: line-through; */
+  text-transform: uppercase;
+  line-height: 30px;
+  font-style: italic;
+  font-size: 100%;
+  font-family: "Montserrat";
+}
+
+img {
+  float: left;
+}
+
+footer {
+  color: white;
+  clear: both; /* clears both sides of the picture */
+  text-align: center;
 }
 
 li {
@@ -50,3 +66,4 @@ li {
 #div2 {
   background: rgba(255, 0, 0, .2 );
 }
+

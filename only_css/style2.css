@@ -1,3 +1,19 @@
 h2 {
   color: blue;
 }
+/* .boxmodel {
+  border: 5px solid aquamarine;
+  display: inline-block;
+  padding: 5px 20px 5px 20px;  top right bottom left 
+  margin: 0px 20px ;  top/bottom, left-right 
+  width: 10px;
+  height: 20px;
+} */
+
+p {
+  font-size: 18px;
+}
+
+span{
+  font-size: 2em;
+}
