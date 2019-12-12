@@ -3,7 +3,9 @@ body {
   /* height: 100%; */
   width: auto;
   display: flex;
-  flex-direction: row nowrap;
+  /* flex-wrap: nowrap; */
+  /* flex-direction: row; */
+  flex-flow: row nowrap;
   align-items: center;
   justify-content: center;
   border: 5px solid black;
