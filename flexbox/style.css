@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+}
+
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -11,6 +15,12 @@ h1 {
   width: 350px;
   text-align: center;
   border-right: 2px solid pink;
+  -moz-box-shadow: 4px 4px 6px rgb(0, 0, 0); 
+  -ms-box-shadow: 4px 4px 6px rgb(0, 0, 0); 
+  -webkit-box-shadow: 4px 4px 6px rgb(0, 0, 0); 
+  -o-box-shadow: 4px 4px 6px rgb(0, 0, 0); 
+  box-shadow: 4px 4px 6px rgb(0, 0, 0);
+  margin-top: 10px;
 }
 
 
@@ -18,4 +28,10 @@ img {
   margin: 10px;
   width: 450px;
   height: 350px;
+  transition: all .5s; /* css 3 */
+}
+
+img:hover {
+  transform: scale(1.1); /* css 3 */
+  /* animation: forwards; */
 }

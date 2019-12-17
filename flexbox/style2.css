@@ -17,7 +17,7 @@ body {
 .container {
   /* height: auto;
   width: auto; */
-  height: auto;
+  height: auto; /* 100px because of children elements */
   width: auto;
   padding:  50px 50px;
   border: 5px solid black;
