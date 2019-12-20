@@ -10,6 +10,7 @@ body, html {
 }
 
 .container {
+  width: auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -17,17 +18,22 @@ body, html {
   text-align: center;
 }
 
+header {
+  width: auto;
+}
+
 h1 {
   color: #decdcd;
   /* position: relative; */
   font-size: 4.2rem;
   padding: 50px;
+  padding-top: 10px;
 }
 
 h1 + p {
   color: #decdcd;
   font-weight: 500;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   font-size: 1.5rem;
 }
 
@@ -39,8 +45,14 @@ p {
 }
 
 #form {
+  width: 100%; /* not sure - maybe width: auto? */
   height: 250px;
   margin-bottom: 100px;
+}
+
+label {
+  color: #decdcd;
+  font-weight: 800;
 }
 
 input {
@@ -50,8 +62,8 @@ input {
   opacity: .8;
   margin: 10px;
   align-self: center;
-  padding: 4px;
-  width: 200px;
+  padding: 7px;
+  width: 250px;
 }
 
 .register, .reset {
@@ -63,6 +75,34 @@ input {
   margin-top: 50px;
 }
 
+.register:hover {
+  background-color: #3c7fc7;
+  border-color: #1f4166;
+  border-width: 4px;
+  transition: .5s;
+  transform: scale(1.1);
+}
+
+.reset:hover {
+  background-color: #3c7fc7;
+  border-color: #1f4166;
+  border-width: 4px;
+  transition: .5s;
+  transform: scale(1.1);
+}
+
+hr  {
+  /* display: flex;
+  justify-content: center; */
+  border-color: #3c7fc7;
+  border-width: 3px;
+  margin: 25px;
+  width: auto;
+}
+
+.nextpage-input {
+  width: 100%;
+}
 
 .gotoblog {
   font-weight: 500;
@@ -75,24 +115,10 @@ input {
 
 .gotoblog:hover {
   background-color: #3c7fc7;
-  border-color: #3c7fc7;
+  border-color: #1f4166;
   border-width: 4px;
-  transition: .3s;
+  transition: .5s;
   transform: scale(1.1);
 }
 
-.register:hover {
-  background-color: #3c7fc7;
-  border-color: #3c7fc7;
-  border-width: 4px;
-  transition: .3s;
-  transform: scale(1.1);
-}
 
-.reset:hover {
-  background-color: #3c7fc7;
-  border-color: #3c7fc7;
-  border-width: 4px;
-  transition: .3s;
-  transform: scale(1.1);
-}

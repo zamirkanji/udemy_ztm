@@ -22,13 +22,17 @@
       </div>
       <!-- <hr> -->
       <form method="POST" id="form">
-        First Name: <input type="text" name="firstname">
+        <label for="firstname" class="firstname-input">First Name:</label>
+        <input type="text" name="firstname">
         <br>
-        Last Name: <input type="text" name="lastname">
+        <label for="lastname" class="lastname-input">Last Name:</label>
+        <input type="text" name="lastname">
         <br>
-        <span id="emailRow">Email: <input type="email" name="email" required></span>
+        <label for="email" class="email-input">Email:</label>
+        <input type="email" name="email" required>
         <br>
-        Password: <input type="password" min="6" name="password" required>
+        <label for="password" class="password-input">Password:</label>
+        <input type="password" min="6" name="password" required>
         <br>
         <div class="register_reset_btns">
           <input class="register" type="submit" value="Register">
@@ -46,7 +50,7 @@
             newsletters, we would appreciate it. Otherwise, let us know if you have any questions or suggestions.</p>
         </footer>
       </div>
-      <div id="nextpage">
+      <div class="nextpage-input">
         <!-- <a href="nextpage.html">Proceed</a> -->
         <input class="gotoblog" type="submit" onclick="location.href='nextpage.html';" value="Proceed">
       </div>
