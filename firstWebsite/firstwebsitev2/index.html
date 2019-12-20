@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link rel="stylesheet" type="text/css" href="stylev2.css">
+  <title>Fantasy Basketball Blog</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="content">
+      <div id="header">
+        <header>
+          <h1>Welcome to our Fantasy Blog!</h1>
+          <p>Please Register Below</p>
+        </header>
+      </div>
+      <!-- <hr> -->
+      <form method="POST" id="form">
+        First Name: <input type="text" name="firstname">
+        <br>
+        Last Name: <input type="text" name="lastname">
+        <br>
+        <span id="emailRow">Email: <input type="email" name="email" required></span>
+        <br>
+        Password: <input type="password" min="6" name="password" required>
+        <br>
+        <div class="register_reset_btns">
+          <input class="register" type="submit" value="Register">
+          <input class="reset" type="reset">
+        </div>
+
+      </form>
+
+      <br>
+      <hr>
+
+      <div id="footer">
+        <footer>
+          <p>A login is not required, you may proceed to our website. If you would like to sign up for our weekly
+            newsletters, we would appreciate it. Otherwise, let us know if you have any questions or suggestions.</p>
+        </footer>
+      </div>
+      <div id="nextpage">
+        <!-- <a href="nextpage.html">Proceed</a> -->
+        <input class="gotoblog" type="submit" onclick="location.href='nextpage.html';" value="Proceed">
+      </div>
+
+
+    </div>
+    <script src="script.js"></script>
+  </div>
+</body>
+
+</html>
