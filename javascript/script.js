@@ -8,17 +8,7 @@
 
 // alert("The sum is: " + sum + "The subtraction is: " + sub + "The multiplication is: " + mult + "The division is: " + div);
 
-/*
-let age = prompt("Please enter your age");
-let ageNum = Number(age);
-if (ageNum < 18) {
-  alert("Powering off")
-} else if (ageNum === 18) {
-  alert("Congratulations on your first year of driving. Enjoy the ride!");
-} else {
-  alert("Powering on. Enjoy the ride!");
-}
-*/
+
 
 function callAlert() {
   console.log("wyd bro!");
