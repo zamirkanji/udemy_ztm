@@ -46,4 +46,45 @@
 // //  parameters - are the actual arguments (a,b)
 // //  arguments - function calls arguments 
 
-// //ARRAYS/OBJECTS
+
+
+
+
+//FUNCTIONS
+
+//function declaration 
+function newFunction() {
+
+}
+
+//function expression
+let newFunction2 = function () {
+
+}
+
+//expression is something that produces a value
+1 + 3
+let a = 2;
+return true;
+
+//calling or evoking a function 
+alert();
+newFunction(param1, param2);
+
+
+//assign a variable 
+let a = true;
+
+//function vs method
+function thisIsAFunction() {
+
+}
+thisIsAFunction()
+
+
+let obj = {
+  thisIsAMethod: function () {
+
+  }
+}
+obj.thisIsAMethod()
