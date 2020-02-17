@@ -13,6 +13,17 @@ let toDosImportant = [
   "eat healthy!!"
 ];
 
+let objectArray = [
+  {
+    name: "Zamir",
+    age: 25,
+    hobby: "PC, Snowboarding",
+    isMarried: false
+  }
+];
+
+
+
 //For Loop
 for (let i = 0; i < toDos.length; i++) {
   // console.log(toDos[i] + "!");
@@ -67,3 +78,11 @@ do {
   console.log(counterThree);
   counterThree--;
 } while (counterThree > 0);
+
+
+
+//output array object
+
+for (i = 0; i < objectArray.length; i++) {
+  console.log(objectArray[0], i);
+};
