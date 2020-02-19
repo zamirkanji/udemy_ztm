@@ -97,42 +97,47 @@ for (i = 0; i < objectArray.length; i++) {
 
 //loop only even or odd numbers depending on user input
 //using an object function inside of an array
-let objectPractice = [{
-  firstName: "Zamir",
-  lastName: "Kanji",
-  loopObject: function () {
-    let numQ = prompt("Please enter a number, even or odd");
-    randNum = Number(numQ);
 
-    if (randNum % 2 === 0) {
-      callEven();
-    } else {
-      callOdd();
-    }
+// let objectPractice = [{
+//   firstName: "Zamir",
+//   lastName: "Kanji",
+//   loopObject: function () {
+//     let numQ = prompt("Please enter a number, even or odd");
+//     randNum = Number(numQ);
 
-    function callEven() {
-      for (i = 0; i <= randNum; i++) {
-        if (i % 2 === 0) {
-          console.log(i + " is even!");
-        } else {
+//     if (randNum % 2 === 0) {
+//       callEven();
+//     } else {
+//       callOdd();
+//     }
 
-        }
-      }
-    };
+//     function callEven() {
+//       for (i = 0; i <= randNum; i++) {
+//         if (i % 2 === 0) {
+//           console.log(i + " is even!");
+//         } else {
 
-    function callOdd() {
-      for (i = 0; i <= randNum; i++) {
-        if (i % 2 === 1) {
-          console.log(i + " is odd!");
-        } else {
+//         }
+//       }
+//     };
 
-        }
-      }
-    };
-  },
-  favoriteFood: "chinese",
-  isMarried: false,
-  fruit: ["banana", "apple", "grape"]
-}];
+//     function callOdd() {
+//       for (i = 0; i <= randNum; i++) {
+//         if (i % 2 === 1) {
+//           console.log(i + " is odd!");
+//         } else {
+
+//         }
+//       }
+//     };
+//   },
+//   favoriteFood: "chinese",
+//   isMarried: false,
+//   fruit: ["banana", "apple", "grape"]
+// }];
 
 // randNum % 2 === 0 &&
+
+
+
+
