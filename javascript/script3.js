@@ -2,6 +2,18 @@ let database = [
   {
     username: "Runninthruda6ix",
     password: "withmywoes"
+  },
+  {
+    username: "Bob",
+    password: "WoWisthebest"
+  },
+  {
+    username: "Sam",
+    password: "coloradoismyhome"
+  },
+  {
+    username: "Braedon",
+    password: "kratedandconstipated"
   }
 ];
 
@@ -20,18 +32,27 @@ let newsFeed = [
   }
 ];
 
+function isUserValid(checkUser, checkPass) {
+  for (i = 0; i < database.length; i++) {
+    if (database[i].username === checkUser && database[i].password === checkPass) {
+      return true; //stops when one is true instead of going through all 0-3 usernames/passwords
+    }
+  }
+  return false; //if none are true, return false
+}
+
+function checkCredentials(checkUser, checkPass) {
+  if (isUserValid(checkUser, checkPass)) { //if it returned true
+    console.log(newsFeed);
+  } else {
+    alert("Sorry! Wrong username and password!");
+  }
+}
+
 let checkUserName = prompt("What is your username?");
 let checkPassword = prompt("What is your password?");
 
-function checkCredentials(user, pass) {
-  if (user === database[0].username && pass === database[0].password) {
-    console.log(newsFeed);
-  } else {
-    console.log("Sorry! Wrong username and password!");
-  }
-};
-
 checkCredentials(checkUserName, checkPassword);
 
-//user and pass in checkCredentials are two paramaters being defined
-//checkUserName and checkPassword are arguments used to match the parameters
+// checkUser and checkPass in checkCredentials are two paramaters being defined
+// checkUserName and checkPassword are arguments used to match the parameters
