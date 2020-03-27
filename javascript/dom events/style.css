@@ -1,6 +1,128 @@
-/* body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+html {
+	height: 100%;
+}
+
+body {
+	/* 	min-height: 100%; */
+	height: 100vh;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	/* 	background-color: skyblue; */
+	font-family: "helvetica";
+	background-image: url(http://marlacummins.com/wp-content/uploads/2014/10/To_Do_List.png);
+	background-size: cover;
+}
+
+h1 {
+	opacity: 0.4;
+	background-color: #e7eff6;
+	border-radius: 10px;
+	border: 3px solid #e7eff6;
+	padding: 10px;
+	font-weight: 400;
+	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+		0 17px 50px 0 rgba(0, 0, 0, 0.19);
+	text-align: center;
+}
+
+p {
+	font-size: 16px;
+	font-weight: 100;
+	/*100% of parent element (h1)*/
+	width: 100%;
+	background-color: #e7eff6;
+	opacity: 0.4;
+	text-align: center;
+	border-radius: 10px;
+	margin-bottom: 50px;
+}
+
+/* #input,
+button {
+	width: 100%;
 } */
+
+#input {
+	background-color: white;
+	border: 5px solid white;
+	border-radius: 10px;
+	text-align: center;
+	opacity: 0.8;
+	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+		0 17px 50px 0 rgba(0, 0, 0, 0.19);
+	font-weight: 400;
+}
+
+button {
+	border-radius: 10px;
+	opacity: 0.8;
+	border: 5px solid white;
+	/* 	text-transform: uppercase; */
+	text-decoration: none;
+	transition: all 0.4s ease 0s;
+}
+
+button:hover {
+	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+		0 17px 50px 0 rgba(0, 0, 0, 0.19);
+	transition: all 0.4s ease 0s;
+	background: #434343;
+	letter-spacing: 1px;
+	-webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+	-moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+	box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
+}
+
+li {
+	z-index: 1;
+	cursor: pointer;
+	color: #005555;
+	font-size: 18px;
+	font-weight: 700;
+	margin: 10px;
+}
+
+/* li::before {
+	content: "";
+	display: block;
+	width: 100%:
+	height: 1px;
+	background: grey;
+	opacity: .4;
+}
+
+li::after {
+	content: "";
+	display: block;
+	width: 100%:
+	height: 1px;
+	background: grey;
+	opacity: .4;
+} */
+
+.done {
+	text-decoration: line-through;
+}
+
+.inputBtn {
+	flex-direction: row;
+
+	/* 	width: 100; */
+	padding: 10px;
+	justify-content: center;
+}
+
+ul {
+	border: 5px solid white;
+	border-radius: 15px;
+	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+		0 17px 50px 0 rgba(0, 0, 0, 0.19);
+	opacity: 0.8;
+	background-color: white;
+}

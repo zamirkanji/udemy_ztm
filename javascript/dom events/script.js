@@ -1,37 +1,51 @@
-// let button = document.getElementsByTagName("button")[0];
-
-// button.addEventListener("mouseenter", function () {
-//   console.log("click");
-// })
-
 let input = document.getElementById("input");
 let button = document.getElementById("enter");
 let ul = document.querySelector("ul");
+let listItem = document.querySelectorAll("li");
+const container = document.querySelector(".body-container");
+
+// let listItemsTest = listItem; // ???
 
 function inputLength() {
   return input.value.length;
 }
 
 function createListElement() {
-  let li = document.createElement("li");
-  li.appendChild(document.createTextNode(input.value));
-  ul.appendChild(li);
+  let listItem = document.createElement("li");
+  // let allListItems = listItem.querySelectorAll("li");
+  listItem.appendChild(document.createTextNode(input.value));
+  ul.appendChild(listItem);
   input.value = "";
 }
+
+// function createBtnElement() {
+// 	let btn = document.createElement("BUTTON");
+// 	btn.innerHTML = "Delete Item";
+// 	// btn.className = "delete-btn";
+// 	allListItems.appendChild(btn);
+// }
 
 function addListAfterClick() {
   if (inputLength() > 0) {
     createListElement();
+    // createBtnElement(); //?
   }
 }
-
 function addListAfterEnter(e) {
-  // console.log(e);
   if (inputLength() > 0 && e.keyCode === 13) {
     createListElement();
+    // createBtnElement(); //?
   }
 }
 
-button.addEventListener("click", addListAfterClick)
+// Event Listeners (callback functions)
+button.addEventListener("click", addListAfterClick);
+input.addEventListener("keypress", addListAfterEnter);
 
-input.addEventListener("keypress", addListAfterEnter)
+for (let i = 0; i < listItem.length; i++) {
+  listItem[i].addEventListener("click", function () {
+    listItem[i].classList.toggle("done");
+  });
+}
+
+//new function to when li is created (input.value.length > 1) create button next to list item and when button is clicked it deletes said list item
